@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/logo3.png" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="css/index2style.css"> -->
+
+    <title>Pandora</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+
+        /*------------------------------------------------------- SCROLL BAR -------------------------------------------------------- */
+
+        ::-webkit-scrollbar {
+            width: 15px;
+        }
+
+        ::-webkit-scrollbar-track {
+            /* border-radius: 34px; */
+            background-color: rgb(255, 255, 255);
+            box-shadow: inset 1px 1px 5px #00000050, inset -2px -2px 5px #00000077;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            width: 4px;
+            border-radius: 60px;
+            background-color: rgb(192, 192, 192);
+            border: 1px solid rgba(255, 255, 255, 0.658);
+            max-height: 250px;
+
+            /* box-shadow: inset 1px 2px 4px #ffffff7e, inset -1px -1px 4px #ffffff75; */
+            /* 172527 rgb(255, 255, 255)*/
+        }
+
+        @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+            .box {
+                -webkit-backdrop-filter: blur(10px);
+                backdrop-filter: blur(10px);
+                /* background-color: rgba(103, 198, 253, 0.199); */
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+
+            body {
+                padding: 0px;
+                margin: 0px;
+                height: 1800px;
+                font-family: 'Ubuntu', sans-serif;
+            }
+
+
+
+            /*---------------------------------------------------------- HEADER ----------------------------------------------------------- */
+
+
+
+            header {
+                background-color: white;
+                display: flex;
+                justify-content: flex-end;
+                box-shadow: 0px 5px 9px rgba(94, 94, 94, 0.137);
+                /* box-shadow: 0px 5px 9px rgb(197, 197, 197); */
+                height: 50px;
+                align-items: center;
+                padding: 0px 10%;
+                position: fixed;
+                width: 100%;
+                z-index: 5;
+            }
+
+            .navbar {
+                display: block;
+                text-decoration: none;
+                /* background-color: rgba(197, 197, 197, 0.253); */
+                width: 380px;
+                border-radius: 9px;
+            }
+
+            li,
+            a,
+            button {
+                font-weight: 500;
+                font-size: 16px;
+                text-decoration: none;
+                color: rgb(73, 73, 73);
+            }
+
+            .navbar ul {
+                padding-inline-start: 0px;
+                display: flex;
+                justify-content: space-around;
+                list-style: none;
+            }
+
+            .navbar li {
+                /* display: inline; */
+                transition: all 0.3s ease 0s;
+            }
+
+            .navbar li a {
+                /* display: inline; */
+                transition: all 0.3s ease 0s;
+                padding: 6px 19px;
+                border-radius: 50px;
+                text-decoration: none;
+                /* background-color:brown;*/
+            }
+
+            .navbar li a:hover {
+                /* display: inline; */
+                transition: all 0.3s ease 0s;
+                text-decoration: underline;
+                /* background:rgba(192, 192, 192, 0.747); */
+                background-color: rgba(214, 214, 214, 0.336);
+            }
+
+            /* .navbar ul li a:visited {
+                            text-decoration: underline;
+                            color:rgba(248, 244, 0, 0.699);;
+                            text-decoration: underline;
+                            background:rgba(192, 192, 192, 0.747);
+                            background-color: rgba(214, 214, 214, 0.336);
+                            } */
+
+            .button {
+                padding: 5px 25px;
+                font-weight: 500;
+                font-size: 16px;
+                background-color: rgba(214, 214, 214, 0.336);
+                border: none;
+                border-radius: 50px;
+                margin-right: -42px;
+                margin-left: 23px;
+                transition: all 0.3s ease 0s;
+            }
+
+            .button:hover {
+                cursor: pointer;
+                transition: all 0.3s ease 0s;
+                background-color: rgba(214, 214, 214, 0.568);
+            }
+
+            .left {
+                margin-right: auto;
+            }
+
+            .left:hover {
+                cursor: pointer;
+            }
+
+
+
+            /*----------------------------------------------------------SECTION 1----------------------------------------------------------- */
+
+
+
+            .section1 {
+                background: url(img/sec3.jpg);
+                background-position: -118px -178px;
+                /* background-size */
+                height: 800px;
+                width: 100%;
+                background-attachment: fixed;
+                z-index:3;
+                /* background-size: cover; */
+            }
+
+            .section1 div {
+                width: 400px;
+                height: 421px;
+                border: 3px solid white;
+                background-color:rgba(255, 255, 255, 0.274);
+                margin: 200px 0px 200px 250px;
+                position: absolute;
+                z-index: 2;
+                color:white;
+            }
+
+            .companyName {
+                padding: 9px 25px 0px 25px;
+                font-family: 'Major Mono Display', monospace;
+                font-size: 20px
+            }
+
+            .companyName:hover {
+                cursor: pointer;
+            }
+
+            .boxtext {
+                font-family: 'Cormorant Garamond', serif;
+                font-size: 50px;
+                padding: 5px 25px 5px 25px;
+            }
+
+            .jewellButton {
+                border: 2px solid rgba(102, 102, 102, 0);
+                border-radius: 3px;
+                padding: 9px 9px;
+                display: block;
+                text-align: center;
+                background-color: rgba(255, 255, 255, 0.774);
+                font-size: 16px;
+                transition: all 0.3s ease 0s;
+                position: relative;
+                color:black;
+                /* margin:-3px; */
+            }
+
+            .jewellButton:hover {
+                /* border: 2px solid rgb(160, 160, 160); */
+                background-color: rgba(255, 255, 255, 0.781);
+                border: 2px solid rgba(102, 102, 102, 0.5);
+                cursor: pointer;
+                transition: all 0.3s ease 0s;
+                /* filter: drop-shadow(0 0 0.2rem rgb(177, 177, 177)); */
+            }
+
+            /* .jewellButton:hover {
+                            border: 2px solid rgb(160, 160, 160);
+                            background-color: rgba(255, 255, 255, 0.781);
+                            border: 2px solid rgba(102, 102, 102, 0.5);
+                            cursor: pointer;
+                            transition: all 0.3s ease 0s;
+                            filter: drop-shadow(0 0 0.2rem rgb(177, 177, 177));
+                        } */
+
+
+
+            /*-------------------------------------------------------------SECTION 2----------------------------------------------------------- */
+
+
+
+
+            .section2 {
+                background: url(img/sec2.jpg);
+                background-position: 0px -151px;
+                color: white;
+                height: 900px;
+                width: 100%;
+                box-shadow: 0px -3px 8px rgba(128, 128, 128, 0.582);
+                box-shadow: 0px -3px 8px rgba(8, 8, 8, 0.404), 0px 3px 8px rgba(63, 63, 63, 0.774);
+                /* box-shadow: 0px 5px 9px rgba(94, 94, 94, 0.137); */
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                z-index:8;
+
+            }
+
+            .section2 .box {
+                background-color: rgba(177, 177, 177, 0.39);
+                border-radius: 5px;
+                color: white;
+                font-family: sans-serif;
+                line-height: 1.5;
+                /* max-width: 50%; */
+                width: 350px;
+                height: 350px;
+                padding: 1rem 2rem;
+                margin: auto 20px;
+                
+
+            }
+
+            /* .container {
+
+                display: flex;
+                width: 1183px;
+                height: 350px;
+                margin: 40px;
+                justify-content: center;
+                /* flex-wrap: wrap; */
+
+/* ------------------------------------------------------------ SECTION 3 ---------------------------------------------------------------- */
+
+                .section3 {
+                background: url(img/sec3.jpg);
+                background-position: 0px -151px;
+                color: white;
+                height: 900px;
+                width: 100%;
+                /* box-shadow: 0px -3px 8px rgba(128, 128, 128, 0.582), 0px 3px 8px rgba(128, 128, 128, 0.582); */
+                display: flex;
+                justify-content: center;
+                background-attachment: fixed;
+                flex-wrap: wrap;
+                z-index:1;
+
+            }
+
+            .section3 .box {
+                background-color: rgba(177, 177, 177, 0.39);
+                border-radius: 5px;
+                color: white;
+                font-family: sans-serif;
+                line-height: 1.5;
+                /* max-width: 50%; */
+                width: 350px;
+                height: 350px;
+                padding: 1rem 2rem;
+                margin: auto 20px;
+
+            }
+        }
+
+/* --------------------------------------------------------------- FOOTER --------------------------------------------------------- */
+
+        footer {
+            background-color:rgba(189, 189, 189, 0.24);
+            height:80px;
+            width:100%;
+            display:flex;
+            /* justify-content:center; */
+            justify-content:flex-end;
+            color:rgba(202, 202, 202, 0.527);
+        }
+        footer ul{
+            width: 550px;
+            list-style:none;
+            margin: auto 30px;
+        }
+        footer ul li {
+            display:inline;
+        }
+        footer ul li a {
+            color:rgba(121, 121, 121, 0.897);
+        }
+        footer ul li a:hover {
+            color:rgb(34, 34, 34);
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <div class="left" id="box1">
+            PANDORA
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a id="home" href="index.html">Home</a></li>
+                <li><a id="Shop" href="#">Shop</a></li>
+                <li><a id="News" href="#">News</a></li>
+                <li><a id="Discounts" href="#">Discounts</a></li>
+            </ul>
+        </nav>
+
+        <a href="http://" class="button">Store</a>
+
+
+
+        <!-- <div class="right" id="box3">
+            right
+        </div> -->
+    </header>
+
+    <section class="section1">
+        <div class="box1">
+            <h3 class="companyName">PANDORA</h3>
+            <p class="boxtext">Good Tings Comes In Small Package</p>
+            <p class="jewellButton">SEE JEWELLERY</p>
+        </div>
+    </section>
+
+    <section class="section2">
+
+
+        <div class="box" id="box-1">
+            <h1>Jason</h1>
+            <p>
+                In Jason Santa Maria‘s personal site, the typography selection and styling plays a large part in the
+                minimalist design. Article titles are large, drawing your attention to them right away. sIFR is used in
+                several places (such as the footer headings) to allow the use of non web-safe fonts without using images
+                for text.
+            </p>
+        </div>
+
+        <div class="box" id="box-2">
+            <h1>ARVO</h1>
+            <p>
+                Arvo is a very good slab serif font family, created by Anton Koovit. It has 4 different variations, from
+                normal weight and normal italic to bold italic.
+                family and this to satisfying all of our needs for strong characters and high
+                readability. Combined with a sans-serif body font, Arvo makes a great font for titles and subtitles.
+            </p>
+        </div>
+
+        <div class="box" id="box-3">
+            <h1>YELLOWTAIL</h1>
+            <p>
+                Yellowtail is a really fun script font. It is inspired by flat brush typefaces with medium weight and
+                has its type style built on Gillies Gothic and Kaufmann. It has a very unique look and tends to be
+                legible even at smaller sizes. We suggest keeping it above 14 pixels for higher readability.
+            </p>
+        </div>
+
+    </section>
+
+    <section class="section3">
+
+
+        <div class="box" id="box-1">
+            <h1>Jason</h1>
+            <p>
+                In Jason Santa Maria‘s personal site, the typography selection and styling plays a large part in the
+                minimalist design. Article titles are large, drawing your attention to them right away. sIFR is used in
+                several places (such as the footer headings) to allow the use of non web-safe fonts without using images
+                for text.
+            </p>
+        </div>
+
+        <div class="box" id="box-2">
+            <h1>ARVO</h1>
+            <p>
+                Arvo is a very good slab serif font family, created by Anton Koovit. It has 4 different variations, from
+                normal weight and normal italic to bold italic.
+                family and this to satisfying all of our needs for strong characters and high
+                readability. Combined with a sans-serif body font, Arvo makes a great font for titles and subtitles.
+            </p>
+        </div>
+
+        <div class="box" id="box-3">
+            <h1>YELLOWTAIL</h1>
+            <p>
+                Yellowtail is a really fun script font. It is inspired by flat brush typefaces with medium weight and
+                has its type style built on Gillies Gothic and Kaufmann. It has a very unique look and tends to be
+                legible even at smaller sizes. We suggest keeping it above 14 pixels for higher readability.
+            </p>
+        </div>
+
+    </section>
+
+    <footer>
+        <ul>
+            <li class="foot_link" id="pandora"><a href="#">©Pandora | </a></li>
+            <li class="foot_link" id="contact_us"><a href="#">Contact Us | </a></li>
+            <li class="foot_link" id="contact_us"><a href="#">Developed by - WebDevloporeGroup limited</a></li>
+
+            <!-- <li class="foot_link" class="button"><button>Instagram | </button></li>
+            <li class="foot_link" class="button"><button>Facebook </button></li> -->
+        </ul>
+    </footer>
+
+</html>
